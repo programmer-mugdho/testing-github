@@ -1,4 +1,6 @@
 .blog {
     background-color: tomato;
     padding: 20px 40px;
+    margin: 20px;
+    border-radius: 5px;
 }
