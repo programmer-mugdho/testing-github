@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
-    <title>Testing Github</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Profile</title>
 </head>
+
 <body>
-    <div class="blog">
-        <h3>My First Blog</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam eius reiciendis tempora provident. Quia error unde quasi consectetur quidem. Magnam id, doloremque quaerat exercitationem iure aperiam sit minima quisquam? Hic!</p>
+    <div
+        style="height: 100vh; width:100; background-color:#111827; align-items:center; justify-content:center; display:flex">
+        <div
+            class="w-full max-w-sm h-80 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex justify-end px-4 pt-4">
+                <button id="dropdownButton" data-dropdown-toggle="dropdown"
+                    class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5"
+                    type="button">
+                    <span class="sr-only">Open dropdown</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 16 3">
+                        <path
+                            d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdown"
+                    class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
+                    <ul class="py-2" aria-labelledby="dropdownButton">
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export
+                                Data</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 object-[0_10%] object-cover rounded-full shadow-lg"
+                    src="https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?_gl=1*17uqmgj*_ga*MTIwMzU1OTY0Ni4xNzUyODYzODM0*_ga_8JE65Q40S6*czE3NTI4NjM4MzMkbzEkZzEkdDE3NTI4NjQ2MDgkajM4JGwwJGgw"
+                    alt="Bonnie image" />
+                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400">Everyday moments, beautifully preserved</span>
+                <div class="flex mt-4 md:mt-6">
+                    <a href="#"
+                        class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                        friend</a>
+                    <a href="#"
+                        class="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Message</a>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="blog">
-        <h3>My Second Blog</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam eius reiciendis tempora provident. Quia error unde quasi consectetur quidem. Magnam id, doloremque quaerat exercitationem iure aperiam sit minima quisquam? Hic!</p>
-    </div>
-    <div class="blog">
-        <h3>My Third Blog</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam eius reiciendis tempora provident. Quia error unde quasi consectetur quidem. Magnam id, doloremque quaerat exercitationem iure aperiam sit minima quisquam? Hic!</p>
-    </div>
-    <div class="blog">
-        <h3>Push Incremental</h3>
-        <ul>
-            <li>add</li>
-            <li>commit</li>
-            <li>push</li>
-        </ul>
-    </div>
-    <div class="blog">
-        <h3>Sea Image</h3>
-        <img src="https://images.unsplash.com/photo-1544894079-e81a9eb1da8b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sea">
-    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
+
 </html>
